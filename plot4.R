@@ -20,7 +20,8 @@
    power <- filter(power, Date >= "2007-02-01" & Date <= "2007-02-02")
 
 #6a. create charting environment
-   par(mfrow=c(2,2), pin = c(2,1.5))
+   par(mfrow=c(2,2))
+   #layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
    
 #6b. create chart #1
    plot(power$DateTime,power$Global_active_power,
@@ -61,5 +62,3 @@
 #6e. save charts
    dev.copy(png,'plot4.png')
    dev.off()
-   
-   

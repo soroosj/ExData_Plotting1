@@ -30,3 +30,4 @@
           ncol=1)
    dev.copy(png,'plot3.png')
    dev.off()
+   
